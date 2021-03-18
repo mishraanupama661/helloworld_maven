@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Welcome"){
+            steps{
+                git credentialsId: 'github', url: 'https://github.com/mishraanupama661/helloworld_maven'
+            }
+            
+        }
+    }
+}
